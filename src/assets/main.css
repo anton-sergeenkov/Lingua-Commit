@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 20px;
+	background-color: #f8f9fa;
+	font-family: sans-serif;
+}
+hr {
+    border: 0px solid;
+    height: 1px;
+    background-color: gray;
+}
+
+:root {
+    --box-shadow-container: 0 2px 24px rgba(168,175,196,.5);
+    --box-shadow-table: 0 10px 15px rgba(5, 31, 43, .055);
+
+    --color-gray-light: #dbdbdb;
+    --color-gray-dark: #636363;
+    --color-blue: #3b49eb;
+    --color-green: #28a848;
+}
