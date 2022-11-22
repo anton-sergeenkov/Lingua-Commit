@@ -8,18 +8,18 @@ import PresentPerfectContinuous from './Tenses/Present/PresentPerfectContinuous.
 </script>
 
 <template>
-    <div class="container">
-        <div class="item" :style="'grid-area: clear'"></div>
+	<div class="container">
+		<div class="item" :style="'grid-area: clear'"></div>
 
 		<!-- Header -->
-        <div
+		<div
 			v-text="item.name"
 			v-for="(item, key) in dataHeader"
 			:style="'grid-area: '+item.grid+'-name'"
 			class="item header"
 			:key="key+'-name'"
 		/>
-        <div
+		<div
 			v-text="item.question"
 			v-for="(item, key) in dataHeader"
 			:style="'grid-area: '+item.grid+'-question'"
@@ -48,7 +48,7 @@ import PresentPerfectContinuous from './Tenses/Present/PresentPerfectContinuous.
 		<div style="grid-area: pc"><PresentContinuous /></div>
 		<div style="grid-area: pp"><PresentPerfect /></div>
 		<div style="grid-area: ppc"><PresentPerfectContinuous /></div>
-    </div>
+	</div>
 </template>
 
 <style scoped>
