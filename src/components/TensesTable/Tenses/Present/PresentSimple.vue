@@ -12,43 +12,41 @@ import TextComment from '../components/TextComment.vue';
 </script>
 
 <template>
-    <TableWrapper>
-        <TextComment>
-            Usually,
-            Often,
-            Always,
-            Seldom,
-            Every day (week, month, year)
-        </TextComment>
+    <TextComment>
+        Usually,
+        Often,
+        Always,
+        Seldom,
+        Every day (week, month, year)
+    </TextComment>
 
-        <Table>
-            <Row>
-                <ColSentence rowspan="2">+</ColSentence>
-                <Col>I / You / We / They</Col>
-                <ColVerb>V<sub>1</sub></ColVerb>
-            </Row>
-            <Row>
-                <Col>He / She / It</Col>
-                <ColVerb>V<sub>s</sub></ColVerb>
-            </Row>
-        </Table>
+    <Table>
+        <Row>
+            <ColSentence rowspan="2">+</ColSentence>
+            <Col>I / You / We / They</Col>
+            <ColVerb>V<sub>1</sub></ColVerb>
+        </Row>
+        <Row>
+            <Col>He / She / It</Col>
+            <ColVerb>V<sub>s</sub></ColVerb>
+        </Row>
+    </Table>
 
-        <Table>
-            <Row>
-                <ColSentence>-</ColSentence>
-                <Col>___</Col>
-                <ColAccent>don't / doesn't</ColAccent>
-                <ColVerb>V<sub>1</sub></ColVerb>
-            </Row>
-        </Table>
+    <Table>
+        <Row>
+            <ColSentence>-</ColSentence>
+            <Col>___</Col>
+            <ColAccent>don't / doesn't</ColAccent>
+            <ColVerb>V<sub>1</sub></ColVerb>
+        </Row>
+    </Table>
 
-        <Table>
-            <Row>
-                <ColSentence>?</ColSentence>
-                <ColAccent>Do / Does</ColAccent>
-                <Col>___</Col>
-                <ColVerb>V<sub>1</sub></ColVerb>
-            </Row>
-        </Table>
-    </TableWrapper>
+    <Table>
+        <Row>
+            <ColSentence>?</ColSentence>
+            <ColAccent>Do / Does</ColAccent>
+            <Col>___</Col>
+            <ColVerb>V<sub>1</sub></ColVerb>
+        </Row>
+    </Table>
 </template>

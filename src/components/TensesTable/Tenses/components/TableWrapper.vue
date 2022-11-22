@@ -1,5 +1,9 @@
+<script setup>
+defineProps(['className'])
+</script>
+
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', className]">
         <slot></slot>
     </div>
 </template>

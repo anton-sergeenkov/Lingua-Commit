@@ -13,6 +13,5 @@ import Col from './Col.vue'
     width: 20px;
     font-weight: 600;
     text-align: center;
-    background-color: #dedede;
 }
 </style>

@@ -11,7 +11,7 @@
     margin-bottom: 10px;
 	border-collapse: collapse;
 	box-shadow: var(--box-shadow-table);
-	background-color: #eaebe1;
+	background-color: #fff;
 }
 .wrapper:last-child {
     margin-bottom: 0;

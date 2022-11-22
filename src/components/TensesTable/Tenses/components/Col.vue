@@ -11,6 +11,6 @@ defineProps(['className'])
 <style scoped>
 .wrapper {
 	padding: 6px;
-    border: 1px solid rgba(0,0,0,.3);
+    border: 2px solid #e6e6e8;
 }
 </style>
