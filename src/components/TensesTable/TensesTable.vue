@@ -1,12 +1,23 @@
 <script setup>
 import { dataHeader, dataSide } from './data';
 
+import TableWrapper from './Tenses/components/TableWrapper.vue';
+
 import PresentSimple from './Tenses/Present/PresentSimple.vue';
 import PresentContinuous from './Tenses/Present/PresentContinuous.vue';
 import PresentPerfect from './Tenses/Present/PresentPerfect.vue';
 import PresentPerfectContinuous from './Tenses/Present/PresentPerfectContinuous.vue';
 
-import TableWrapper from './Tenses/components/TableWrapper.vue';
+import PastSimple from './Tenses/Past/PastSimple.vue';
+import PastContinuous from './Tenses/Past/PastContinuous.vue';
+import PastPerfect from './Tenses/Past/PastPerfect.vue';
+import PastPerfectContinuous from './Tenses/Past/PastPerfectContinuous.vue';
+
+import FutureSimple from './Tenses/Future/FutureSimple.vue';
+import FutureContinuous from './Tenses/Future/FutureContinuous.vue';
+import FuturePerfect from './Tenses/Future/FuturePerfect.vue';
+import FuturePerfectContinuous from './Tenses/Future/FuturePerfectContinuous.vue';
+
 </script>
 
 <template>
@@ -46,17 +57,45 @@ import TableWrapper from './Tenses/components/TableWrapper.vue';
 		/>
 
 		<!-- Present -->
-		<TableWrapper style="grid-area: ps" className="color-present">
+		<TableWrapper style="grid-area: present-s" className="color-present">
 			<PresentSimple />
 		</TableWrapper>
-		<TableWrapper style="grid-area: pc" className="color-present">
+		<TableWrapper style="grid-area: present-c" className="color-present">
 			<PresentContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: pp" className="color-present">
+		<TableWrapper style="grid-area: present-p" className="color-present">
 			<PresentPerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: ppc" className="color-present">
+		<TableWrapper style="grid-area: present-pc" className="color-present">
 			<PresentPerfectContinuous />
+		</TableWrapper>
+
+		<!-- Past -->
+		<TableWrapper style="grid-area: past-s" className="color-past">
+			<PastSimple />
+		</TableWrapper>
+		<TableWrapper style="grid-area: past-c" className="color-past">
+			<PastContinuous />
+		</TableWrapper>
+		<TableWrapper style="grid-area: past-p" className="color-past">
+			<PastPerfect />
+		</TableWrapper>
+		<TableWrapper style="grid-area: past-pc" className="color-past">
+			<PastPerfectContinuous />
+		</TableWrapper>
+
+		<!-- Future -->
+		<TableWrapper style="grid-area: future-s" className="color-future">
+			<FutureSimple />
+		</TableWrapper>
+		<TableWrapper style="grid-area: future-c" className="color-future">
+			<FutureContinuous />
+		</TableWrapper>
+		<TableWrapper style="grid-area: future-p" className="color-future">
+			<FuturePerfect />
+		</TableWrapper>
+		<TableWrapper style="grid-area: future-pc" className="color-future">
+			<FuturePerfectContinuous />
 		</TableWrapper>
 	</div>
 </template>
@@ -91,9 +130,9 @@ u {
         "clear    header-sl-name      header-cs-name      header-pt-name      header-pc-name"
         "clear    header-sl-question  header-cs-question  header-pt-question  header-pc-question"
         "clear    header-sl-text      header-cs-text      header-pt-text      header-pc-text"
-		"side-pr  ps                  pc                  pp                  ppc"
-		"side-ps  . . . ."
-		"side-ft  . . . .";
+		"side-pr  present-s           present-c           present-p           present-pc"
+		"side-ps  past-s              past-c              past-p              past-pc"
+		"side-ft  future-s            future-c            future-p            future-pc";
 
 	font-size: 15px;
     border: 1px solid rgba(0,0,0,.1);
