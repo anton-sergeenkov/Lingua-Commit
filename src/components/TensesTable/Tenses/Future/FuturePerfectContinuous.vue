@@ -17,8 +17,8 @@ import TextComment from '../components/TextComment.vue';
     </TextComment>
 
 	<Table>
-		<ColSentence>+</ColSentence>
 		<Row>
+			<ColSentence>+</ColSentence>
 			<Col>___</Col>
 			<ColAccent>will have <u>been</u></ColAccent>
 			<ColVerb>V<sub>ing</sub></ColVerb>

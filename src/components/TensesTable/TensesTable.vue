@@ -135,6 +135,8 @@ u {
 		"side-ft  future-s            future-c            future-p            future-pc";
 
 	font-size: 15px;
+	max-width: 1280px;
+	margin: auto;
     border: 1px solid rgba(0,0,0,.1);
     background-color: rgba(0,0,0,.25);
 	box-shadow:  var(--box-shadow-container);
