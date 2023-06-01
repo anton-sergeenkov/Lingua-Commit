@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+
 import { dataHeader, dataSide } from './data';
 
 import TableWrapper from './Tenses/components/TableWrapper.vue';
@@ -18,10 +20,17 @@ import FutureContinuous from './Tenses/Future/FutureContinuous.vue';
 import FuturePerfect from './Tenses/Future/FuturePerfect.vue';
 import FuturePerfectContinuous from './Tenses/Future/FuturePerfectContinuous.vue';
 
+function getDescription(arg) {
+    isTableView.value = false;
+	currentTense.value = arg;
+}
+
+const isTableView = ref(true);
+const currentTense = ref('');
 </script>
 
 <template>
-	<div class="container">
+	<div class="container" v-if="isTableView">
 		<div class="item" :style="'grid-area: clear'"></div>
 
 		<!-- Header -->
@@ -57,46 +66,64 @@ import FuturePerfectContinuous from './Tenses/Future/FuturePerfectContinuous.vue
 		/>
 
 		<!-- Present -->
-		<TableWrapper style="grid-area: present-s" className="color-present">
-			<PresentSimple />
+		<TableWrapper style="grid-area: present-s" className="color-present" @click="getDescription('PresentSimple')">
+			<PresentSimple  />
 		</TableWrapper>
-		<TableWrapper style="grid-area: present-c" className="color-present">
+		<TableWrapper style="grid-area: present-c" className="color-present" @click="getDescription('PresentContinuous')">
 			<PresentContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: present-p" className="color-present">
+		<TableWrapper style="grid-area: present-p" className="color-present" @click="getDescription('PresentPerfect')">
 			<PresentPerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: present-pc" className="color-present">
+		<TableWrapper style="grid-area: present-pc" className="color-present" @click="getDescription('PresentPerfectContinuous')">
 			<PresentPerfectContinuous />
 		</TableWrapper>
 
 		<!-- Past -->
-		<TableWrapper style="grid-area: past-s" className="color-past">
+		<TableWrapper style="grid-area: past-s" className="color-past" @click="getDescription('PastSimple')">
 			<PastSimple />
 		</TableWrapper>
-		<TableWrapper style="grid-area: past-c" className="color-past">
+		<TableWrapper style="grid-area: past-c" className="color-past" @click="getDescription('PastContinuous')">
 			<PastContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: past-p" className="color-past">
+		<TableWrapper style="grid-area: past-p" className="color-past" @click="getDescription('PastPerfect')">
 			<PastPerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: past-pc" className="color-past">
+		<TableWrapper style="grid-area: past-pc" className="color-past" @click="getDescription('PastPerfectContinuous')">
 			<PastPerfectContinuous />
 		</TableWrapper>
 
 		<!-- Future -->
-		<TableWrapper style="grid-area: future-s" className="color-future">
+		<TableWrapper style="grid-area: future-s" className="color-future" @click="getDescription('FutureSimple')">
 			<FutureSimple />
 		</TableWrapper>
-		<TableWrapper style="grid-area: future-c" className="color-future">
+		<TableWrapper style="grid-area: future-c" className="color-future" @click="getDescription('FutureContinuous')">
 			<FutureContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: future-p" className="color-future">
+		<TableWrapper style="grid-area: future-p" className="color-future" @click="getDescription('FuturePerfect')">
 			<FuturePerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: future-pc" className="color-future">
+		<TableWrapper style="grid-area: future-pc" className="color-future" @click="getDescription('FuturePerfectContinuous')">
 			<FuturePerfectContinuous />
 		</TableWrapper>
+	</div>
+	<div v-else class="wrapper-details">
+		<button class="close" @click="isTableView = !isTableView">🏷️</button>
+
+		<PresentSimple details v-if="currentTense === 'PresentSimple'" />
+		<PresentContinuous details v-if="currentTense === 'PresentContinuous'" />
+		<PresentPerfect details v-if="currentTense === 'PresentPerfect'" />
+		<PresentPerfectContinuous details v-if="currentTense === 'PresentPerfectContinuous'" />
+
+		<PastSimple details v-if="currentTense === 'PastSimple'" />
+		<PastContinuous details v-if="currentTense === 'PastContinuous'" />
+		<PastPerfect details v-if="currentTense === 'PastPerfect'" />
+		<PastPerfectContinuous details v-if="currentTense === 'PastPerfectContinuous'" />
+
+		<FutureSimple details v-if="currentTense === 'FutureSimple'" />
+		<FutureContinuous details v-if="currentTense === 'FutureContinuous'" />
+		<FuturePerfect details v-if="currentTense === 'FuturePerfect'" />
+		<FuturePerfectContinuous details v-if="currentTense === 'FuturePerfectContinuous'" />
 	</div>
 </template>
 
@@ -109,18 +136,43 @@ u {
 	color: #595959;
 	font-weight: 600;
 }
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.table-details {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.data-details {
+	margin-top: 10px;
+}
 </style>
 
 <style scoped>
-.color-present {
-	background-color: #e1edd3;
-}
-.color-past {
-	background-color: #ede9d3;
-}
+.color-present,
+.color-past,
 .color-future {
-	background-color: #d3e9ed;
+	transition: .4s;
+	cursor: pointer;
+	outline: 2px solid transparent;
 }
+.color-present:hover,
+.color-past:hover,
+.color-future:hover {
+	/* filter: grayscale(100%); */
+	filter: brightness(90%);
+	outline: 1px solid rgba(0,0,0,.3);
+}
+
+.color-present { background-color: #e1edd3; }
+.color-past    { background-color: #ede9d3; }
+.color-future  { background-color: #d3e9ed; }
+
+/* .color-present:hover { background-color: #acc989; }
+.color-past:hover    { background-color: #ede9d3; }
+.color-future:hover  { background-color: #d3e9ed; } */
 
 .container {
     display: grid;
@@ -171,5 +223,25 @@ u {
 	text-align: center;
 	font-style: italic;
 	color: var(--color-gray-dark);
+}
+
+.wrapper-details {
+	max-width: 1280px;
+	margin: auto;
+    background-color: #fff;
+    box-shadow:  var(--box-shadow-container);
+    padding: 10px;
+}
+.close {
+	width: 40px;
+	height: 40px;
+	display: block;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: none;
+	background: none;
+	background-color: rgba(0,0,0,.1);
+	margin-bottom: 10px;
 }
 </style>
