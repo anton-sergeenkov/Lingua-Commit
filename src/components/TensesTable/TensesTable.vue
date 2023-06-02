@@ -146,8 +146,8 @@ Structure
 	font-size: 15px;
 	max-width: 1280px;
 	margin: auto;
-    border: 1px solid rgba(0,0,0,.1);
-    background-color: rgba(0,0,0,.25);
+    border: 1px solid rgba(0,0,0,.09);
+    background-color: rgba(0,0,0,.15);
 	box-shadow:  var(--box-shadow-container);
 }
 .item {
@@ -159,17 +159,17 @@ Structure
 	justify-content: center;
 	align-items: center;
 	padding: 15px;
-	font-weight: 700;
 	text-align: center;
+	font-family: Roboto-Medium;
 }
 .subheader {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 13px;
-	font-weight: 700;
 	text-align: center;
 	color: rgb(var(--color-violet-blue));
+	font-family: Roboto-Medium;
 }
 .comment {
 	display: flex;
@@ -177,7 +177,7 @@ Structure
 	align-items: center;
 	font-size: 13px;
 	text-align: center;
-	font-style: italic;
+	font-family: Roboto-Italic;
 	color: rgb(var(--color-gray-70));
 }
 

@@ -18,12 +18,6 @@ defineProps({
     <h2 v-if="details">Present Perfect Continuous</h2>
 
     <div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Since 3 p.m.,
-			For a long time,
-			For a month
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence rowspan="2">+</ColSentence>
@@ -54,6 +48,12 @@ defineProps({
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
+
+		<TextComment>
+			Since 3 p.m.,
+			For a long time,
+			For a month
+		</TextComment>
 	</div>
 
 	<div v-if="details" class="data-details">

@@ -11,7 +11,6 @@ import Col from './Col.vue'
 <style scoped>
 .wrapper {
     width: 20px;
-    font-weight: 600;
     text-align: center;
 }
 </style>

@@ -10,7 +10,7 @@ import Col from './Col.vue'
 
 <style scoped>
 .wrapper {
-    font-weight: 600;
+    font-family: Roboto-Medium;
 	color: #b603fc;
 }
 </style>

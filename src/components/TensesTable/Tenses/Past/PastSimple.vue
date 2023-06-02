@@ -18,12 +18,6 @@ defineProps({
 	<h2 v-if="details">Past Simple</h2>
 
 	<div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Yesterday,
-			Last week (month, year),
-			Long ago
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence>+</ColSentence>
@@ -49,6 +43,12 @@ defineProps({
 				<ColVerb>V<sub>1</sub></ColVerb>
 			</Row>
 		</Table>
+
+		<TextComment>
+			Yesterday,
+			Last week (month, year),
+			Long ago
+		</TextComment>
 	</div>
 
     <div v-if="details" class="data-details">

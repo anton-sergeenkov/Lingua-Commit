@@ -18,11 +18,6 @@ defineProps({
 	<h2 v-if="details">Past Perfect Continuous</h2>
 
     <div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Yesterday since 3 p.m.,
-			For some time in the past
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence>+</ColSentence>
@@ -49,6 +44,11 @@ defineProps({
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
+	
+		<TextComment>
+			Yesterday since 3 p.m.,
+			For some time in the past
+		</TextComment>
 	</div>
 
     <div v-if="details" class="data-details">

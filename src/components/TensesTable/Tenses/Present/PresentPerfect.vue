@@ -18,15 +18,6 @@ defineProps({
     <h2 v-if="details">Present Perfect</h2>
 
     <div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Ever,
-			Never,
-			Just,
-			Already,
-			Not … yet,
-			By 3 p.m.
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence rowspan="2">+</ColSentence>
@@ -57,6 +48,15 @@ defineProps({
 				<ColVerb>V<sub>3</sub> / V<sub>ed</sub></ColVerb>
 			</Row>
 		</Table>
+
+		<TextComment>
+			Ever,
+			Never,
+			Just,
+			Already,
+			Not … yet,
+			By 3 p.m.
+		</TextComment>
 	</div>
 
     <div v-if="details" class="data-details">

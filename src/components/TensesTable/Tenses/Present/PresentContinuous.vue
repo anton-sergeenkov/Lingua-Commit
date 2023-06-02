@@ -18,11 +18,6 @@ defineProps({
     <h2 v-if="details">Present Continuous</h2>
 
     <div class="table" :class="details && 'table-details'">
-        <TextComment>
-            Now,
-            At the moment
-        </TextComment>
-
         <Table>
             <Row>
                 <ColSentence rowspan="3">+</ColSentence>
@@ -57,6 +52,11 @@ defineProps({
                 <ColVerb>V<sub>ing</sub></ColVerb>
             </Row>
         </Table>
+
+        <TextComment>
+            Now,
+            At the moment
+        </TextComment>
     </div>
 
     <div v-if="details" class="data-details">

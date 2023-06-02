@@ -18,14 +18,6 @@ defineProps({
     <h2 v-if="details">Present Simple</h2>
 
     <div class="table" :class="details && 'table-details'">
-        <TextComment>
-            Usually,
-            Often,
-            Always,
-            Seldom,
-            Every day (week, month, year)
-        </TextComment>
-
         <Table>
             <Row>
                 <ColSentence rowspan="2">+</ColSentence>
@@ -55,6 +47,14 @@ defineProps({
                 <ColVerb>V<sub>1</sub></ColVerb>
             </Row>
         </Table>
+
+        <TextComment>
+            Usually,
+            Often,
+            Always,
+            Seldom,
+            Every day (week, month, year)
+        </TextComment>
     </div>
 
 <div v-if="details" class="data-details">

@@ -18,11 +18,6 @@ defineProps({
 	<h2 v-if="details">Future Perfect Continuous</h2>
 
 	<div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Tomorrow since 3 p.m.,
-			For some time in the future
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence>+</ColSentence>
@@ -49,6 +44,11 @@ defineProps({
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
+
+		<TextComment>
+			Tomorrow since 3 p.m.,
+			For some time in the future
+		</TextComment>
 	</div>
 
     <div v-if="details" class="data-details">

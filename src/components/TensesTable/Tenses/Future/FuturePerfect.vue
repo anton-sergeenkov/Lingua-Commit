@@ -18,11 +18,6 @@ defineProps({
 	<h2 v-if="details">Future Perfect</h2>
 
 	<div class="table" :class="details && 'table-details'">
-		<TextComment>
-			Tomorrow by 3 p.m.,
-			By some time in the future
-		</TextComment>
-
 		<Table>
 			<Row>
 				<ColSentence>+</ColSentence>
@@ -49,6 +44,11 @@ defineProps({
 				<ColVerb>V<sub>3</sub> / V<sub>ed</sub></ColVerb>
 			</Row>
 		</Table>
+
+		<TextComment>
+			Tomorrow by 3 p.m.,
+			By some time in the future
+		</TextComment>
 	</div>
 
     <div v-if="details" class="data-details">

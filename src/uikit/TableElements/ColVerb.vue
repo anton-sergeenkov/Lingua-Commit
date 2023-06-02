@@ -10,8 +10,8 @@ import Col from './Col.vue'
 
 <style scoped>
 .wrapper {
-	width: 60px;
-	font-weight: 600;
+	width: 65px;
+	font-family: Roboto-Medium;
 	text-align: center;
 	color: #241ae3;
 }
