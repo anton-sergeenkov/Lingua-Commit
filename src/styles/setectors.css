@@ -1,0 +1,55 @@
+
+/***************************************************
+Tags
+/***************************************************/
+u {
+	background-color: #e5e1eb;
+	padding: 1px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #595959;
+	font-weight: 600;
+}
+h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+b {
+	color: blue;
+}
+i {
+	color: rgb(var(--color-green));
+}
+em {
+	color: rgb(var(--color-blue-dark));
+	background-color: rgb(var(--color-brown-light));
+	border-radius: 10px;
+	padding: 0 5px;
+	font-style: normal;
+}
+ul {
+	line-height: 1.4;
+	list-style-type: circle;
+}
+s {
+	text-decoration: none;
+	background-color: rgba(var(--color-brown-light), .5);
+	color: rgb(var(--color-blue-gray-dark));
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+	justify-content: center;
+	border-radius: 50%;
+}
+
+/***************************************************
+Classes
+/***************************************************/
+.table-details {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.data-details {
+	margin-top: 10px;
+}

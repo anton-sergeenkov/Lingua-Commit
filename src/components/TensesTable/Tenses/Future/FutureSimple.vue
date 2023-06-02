@@ -1,14 +1,13 @@
 <script setup>
-import Table from '../components/Table.vue';
-import Row from '../components/Row.vue';
-
-import Col from '../components/Col.vue';
-import ColSentence from '../components/ColSentence.vue';
-import ColAccent from '../components/ColAccent.vue';
-import ColVerb from '../components/ColVerb.vue';
-
-import TextComment from '../components/TextComment.vue';
-import TextData from '../components/TextData.vue';
+import Col from '../../../../uikit/TableElements/Col.vue';
+import ColAccent from '../../../../uikit/TableElements/ColAccent.vue';
+import ColSentence from '../../../../uikit/TableElements/ColSentence.vue';
+import ColVerb from '../../../../uikit/TableElements/ColVerb.vue';
+import Row from '../../../../uikit/TableElements/Row.vue';
+import Table from '../../../../uikit/TableElements/Table.vue';
+import TableWrapper from '../../../../uikit/TableElements/TableWrapper.vue';
+import TextComment from '../../../../uikit/TableElements/TextComment.vue';
+import TextData from '../../../../uikit/TableElements/TextData.vue';
 
 defineProps({
 	details: { type: Boolean, required: false },

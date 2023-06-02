@@ -4,8 +4,8 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && npm run build-gh-pages",
-    "build-gh-pages": "gh-pages -d dist"
+    "build-gh-pages": "gh-pages -d dist",
+    "deploy": "npm run build && npm run build-gh-pages"
   },
   "dependencies": {
     "vue": "^3.2.41"

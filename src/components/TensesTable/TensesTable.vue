@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 import { dataHeader, dataSide } from './data';
 
-import TableWrapper from './Tenses/components/TableWrapper.vue';
+import TableWrapper from '../../uikit/TableElements/TableWrapper.vue';
 
 import PresentSimple from './Tenses/Present/PresentSimple.vue';
 import PresentContinuous from './Tenses/Present/PresentContinuous.vue';
@@ -107,8 +107,8 @@ const currentTense = ref('');
 			<FuturePerfectContinuous />
 		</TableWrapper>
 	</div>
-	<div v-else class="wrapper-details">
-		<button class="close" @click="isTableView = !isTableView">🏷️</button>
+	<div v-else class="details-wrapper">
+		<button class="details-close" @click="isTableView = !isTableView">🏷️</button>
 
 		<PresentSimple details v-if="currentTense === 'PresentSimple'" />
 		<PresentContinuous details v-if="currentTense === 'PresentContinuous'" />
@@ -127,53 +127,10 @@ const currentTense = ref('');
 	</div>
 </template>
 
-<style>
-u {
-	background-color: #e5e1eb;
-	padding: 1px;
-	border-radius: 3px;
-	text-decoration: none;
-	color: #595959;
-	font-weight: 600;
-}
-h2 {
-    margin: 0;
-    margin-bottom: 10px;
-}
-.table-details {
-    width: 400px;
-    padding: 10px;
-    border: 1px solid rgba(0,0,0,.1);
-}
-.data-details {
-	margin-top: 10px;
-}
-</style>
-
 <style scoped>
-.color-present,
-.color-past,
-.color-future {
-	transition: .4s;
-	cursor: pointer;
-	outline: 2px solid transparent;
-}
-.color-present:hover,
-.color-past:hover,
-.color-future:hover {
-	/* filter: grayscale(100%); */
-	filter: brightness(90%);
-	outline: 1px solid rgba(0,0,0,.3);
-}
-
-.color-present { background-color: #e1edd3; }
-.color-past    { background-color: #ede9d3; }
-.color-future  { background-color: #d3e9ed; }
-
-/* .color-present:hover { background-color: #acc989; }
-.color-past:hover    { background-color: #ede9d3; }
-.color-future:hover  { background-color: #d3e9ed; } */
-
+/***************************************************
+Structure
+/***************************************************/
 .container {
     display: grid;
 	gap: 1px;
@@ -193,7 +150,6 @@ h2 {
     background-color: rgba(0,0,0,.25);
 	box-shadow:  var(--box-shadow-container);
 }
-
 .item {
 	padding: 9px;
 	background-color: #fff;
@@ -213,7 +169,7 @@ h2 {
 	font-size: 13px;
 	font-weight: 700;
 	text-align: center;
-	color: var(--color-blue);
+	color: rgb(var(--color-violet-blue));
 }
 .comment {
 	display: flex;
@@ -222,17 +178,42 @@ h2 {
 	font-size: 13px;
 	text-align: center;
 	font-style: italic;
-	color: var(--color-gray-dark);
+	color: rgb(var(--color-gray-70));
 }
 
-.wrapper-details {
+/***************************************************
+Tenses Block
+/***************************************************/
+.color-present,
+.color-past,
+.color-future {
+	transition: .4s;
+	cursor: pointer;
+	outline: 2px solid transparent;
+}
+
+.color-present { background-color: #e1edd3; }
+.color-past    { background-color: #ede9d3; }
+.color-future  { background-color: #d3e9ed; }
+
+.color-present:hover,
+.color-past:hover,
+.color-future:hover {
+	filter: brightness(90%);
+	outline: 1px solid rgba(0,0,0,.3);
+}
+
+/***************************************************
+Details
+/***************************************************/
+.details-wrapper {
 	max-width: 1280px;
 	margin: auto;
     background-color: #fff;
     box-shadow:  var(--box-shadow-container);
-    padding: 10px;
+    padding: 10px 30px;
 }
-.close {
+.details-close {
 	width: 40px;
 	height: 40px;
 	display: block;
