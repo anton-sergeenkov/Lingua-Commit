@@ -1,49 +1,107 @@
 
 /***************************************************
-Tags
+Headers
 /***************************************************/
-u {
-	background-color: #e5e1eb;
-	padding: 1px;
-	border-radius: 3px;
-	text-decoration: none;
-	color: #595959;
-	font-weight: 600;
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	margin: 15px;
+	font-family: Roboto-Medium;
+}
+h1 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 h2 {
-    margin: 0;
-    margin-bottom: 10px;
+	font-size: 22px;
+	color: rgba(var(--color-blue-gray-medium));
+	border-bottom: 1px solid rgba(var(--color-gray-light));
 }
-b {
-	color: blue;
+h3 {
+	font-size: 20px;
+	color: rgba(var(--color-blue-gray-medium));
 }
-i {
-	color: rgb(var(--color-green));
+h4 {
+	font-size: 18px;
+	color: rgb(var(--color-blue-gray));
 }
-em {
-	color: rgb(var(--color-blue-dark));
-	background-color: rgb(var(--color-brown-light));
-	border-radius: 10px;
-	padding: 0 5px;
-	font-style: normal;
-}
-ul {
-	line-height: 1.4;
-	list-style-type: circle;
-}
-s {
-	text-decoration: none;
-	background-color: rgba(var(--color-brown-light), .5);
-	color: rgb(var(--color-blue-gray-dark));
-	display: inline-flex;
-	width: 20px;
-	height: 20px;
-	justify-content: center;
-	border-radius: 50%;
+h5 {
+	font-size: 16px;
+	color: rgba(var(--color-blue-gray-medium), .9);
 }
 
 /***************************************************
-Classes
+Lists
+/***************************************************/
+ul {
+	line-height: 1.7;
+	list-style-type: none;
+}
+ul li::before {
+    content: "\2022";
+    color: rgb(var(--color-blue-dark));
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+ul a {
+	color: rgb(var(--color-violet-medium));
+}
+
+/***************************************************
+Tags
+/***************************************************/
+hr {
+    height: 3px;
+    margin: 15px 20px;
+	border: none;
+    border-radius: 10px;
+	background-color: rgba(var(--color-gray-30), .3);
+}
+hr.small {
+	width: 100px;
+}
+p {
+	padding: 0 26px;
+}
+em {
+	color: rgb(var(--color-pink));
+	font-style: normal;
+	position: relative;
+	font-family: Roboto-Regular;
+}
+em:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px dashed rgba(var(--color-pink), .7);
+}
+b {
+	margin-top: 10px;
+	font-weight: 600;
+	color: rgba(var(--color-violet), .9);
+}
+i {
+    color: rgb(var(--color-green));
+}
+s {
+	text-decoration: none;
+	color: rgb(var(--color-gray-50));
+	font-weight: normal;
+}
+u {
+	color: #595959;
+}
+mark {}
+
+/***************************************************
+Details Page
 /***************************************************/
 .table-details {
     width: 400px;
@@ -52,4 +110,5 @@ Classes
 }
 .data-details {
 	margin-top: 10px;
+    font-size: 14px;
 }

@@ -20,6 +20,8 @@ import FutureContinuous from './Tenses/Future/FutureContinuous.vue';
 import FuturePerfect from './Tenses/Future/FuturePerfect.vue';
 import FuturePerfectContinuous from './Tenses/Future/FuturePerfectContinuous.vue';
 
+import Info from '@/uikit/Info.vue';
+
 function getDescription(arg) {
     isTableView.value = false;
 	currentTense.value = arg;
@@ -125,6 +127,12 @@ const currentTense = ref('');
 		<FuturePerfect details v-if="currentTense === 'FuturePerfect'" />
 		<FuturePerfectContinuous details v-if="currentTense === 'FuturePerfectContinuous'" />
 	</div>
+
+	<div class="info" v-if="isTableView">
+		<ul>
+			<li>3 вида глаголов только для <b>Present Simple</b> и <b>Past Simple</b></li>
+		</ul>
+	</div>
 </template>
 
 <style scoped>
@@ -180,6 +188,12 @@ Structure
 	font-family: Roboto-Italic;
 	color: rgb(var(--color-gray-70));
 }
+.info {
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 15px;
+}
 
 /***************************************************
 Tenses Block
@@ -211,7 +225,7 @@ Details
 	margin: auto;
     background-color: #fff;
     box-shadow:  var(--box-shadow-container);
-    padding: 10px 30px;
+    padding: 30px;
 }
 .details-close {
 	width: 40px;
