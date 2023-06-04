@@ -21,6 +21,7 @@ import FuturePerfect from './Tenses/Future/FuturePerfect.vue';
 import FuturePerfectContinuous from './Tenses/Future/FuturePerfectContinuous.vue';
 
 import Info from '@/uikit/Info.vue';
+import Uikit from '../Uikit.vue';
 
 function getDescription(arg) {
     isTableView.value = false;
@@ -28,6 +29,7 @@ function getDescription(arg) {
 }
 
 const isTableView = ref(true);
+const isUilitView = ref(false);
 const currentTense = ref('');
 </script>
 
@@ -110,22 +112,32 @@ const currentTense = ref('');
 		</TableWrapper>
 	</div>
 	<div v-else class="details-wrapper">
-		<button class="details-close" @click="isTableView = !isTableView">🏷️</button>
+		<div class="details-buttons">
+			<button class="details-close" @click="isTableView = !isTableView">🏷️</button>
+			<button class="details-close" @click="isUilitView = !isUilitView">🥥</button>
+		</div>
 
-		<PresentSimple details v-if="currentTense === 'PresentSimple'" />
-		<PresentContinuous details v-if="currentTense === 'PresentContinuous'" />
-		<PresentPerfect details v-if="currentTense === 'PresentPerfect'" />
-		<PresentPerfectContinuous details v-if="currentTense === 'PresentPerfectContinuous'" />
+		<div class="details-content">
+			<div class="details-data">
+				<PresentSimple details v-if="currentTense === 'PresentSimple'" />
+				<PresentContinuous details v-if="currentTense === 'PresentContinuous'" />
+				<PresentPerfect details v-if="currentTense === 'PresentPerfect'" />
+				<PresentPerfectContinuous details v-if="currentTense === 'PresentPerfectContinuous'" />
 
-		<PastSimple details v-if="currentTense === 'PastSimple'" />
-		<PastContinuous details v-if="currentTense === 'PastContinuous'" />
-		<PastPerfect details v-if="currentTense === 'PastPerfect'" />
-		<PastPerfectContinuous details v-if="currentTense === 'PastPerfectContinuous'" />
+				<PastSimple details v-if="currentTense === 'PastSimple'" />
+				<PastContinuous details v-if="currentTense === 'PastContinuous'" />
+				<PastPerfect details v-if="currentTense === 'PastPerfect'" />
+				<PastPerfectContinuous details v-if="currentTense === 'PastPerfectContinuous'" />
 
-		<FutureSimple details v-if="currentTense === 'FutureSimple'" />
-		<FutureContinuous details v-if="currentTense === 'FutureContinuous'" />
-		<FuturePerfect details v-if="currentTense === 'FuturePerfect'" />
-		<FuturePerfectContinuous details v-if="currentTense === 'FuturePerfectContinuous'" />
+				<FutureSimple details v-if="currentTense === 'FutureSimple'" />
+				<FutureContinuous details v-if="currentTense === 'FutureContinuous'" />
+				<FuturePerfect details v-if="currentTense === 'FuturePerfect'" />
+				<FuturePerfectContinuous details v-if="currentTense === 'FuturePerfectContinuous'" />
+			</div>
+			<div class="details-uikit" v-if="isUilitView">
+				<Uikit />
+			</div>
+		</div>
 	</div>
 
 	<div class="info" v-if="isTableView">
@@ -238,5 +250,24 @@ Details
 	background: none;
 	background-color: rgba(0,0,0,.1);
 	margin-bottom: 10px;
+}
+.details-buttons {
+	display: flex;
+	gap: 10px;
+}
+.details-content {
+	display: flex;
+	gap: 50px;
+}
+.details-data {
+	flex-grow: 1;
+}
+.details-uikit {
+	padding: 20px;
+	max-width: 500px;
+	background-color: rgba(var(--color-violet), .04);
+	box-shadow: var(--box-shadow);
+	border: 2px solid rgba(var(--color-violet), .15);
+	border-radius: 10px;
 }
 </style>

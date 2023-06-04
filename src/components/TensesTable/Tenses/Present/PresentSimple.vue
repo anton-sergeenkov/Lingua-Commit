@@ -69,7 +69,7 @@ defineProps({
 <!------------------------------------------------------------->
 <ul>
     <li>Рутинные, постоянные действия</li>
-    <li>Со словами: <em>always</em>, <em>sometimes</em>, <em>usually</em>, <em>often</em>, <em>rarely</em>, <em>never</em>, <em>every day</em> etc.</li>
+    <li>Со словами: <em>always</em>, <em>sometimes</em>, <em>usually</em>, <em>often</em>, <em>rarely</em>, <em>never</em>, <em>every day</em> etc. <em>always</em>, <em>sometimes</em>, <em>usually</em>, <em>often</em>, <em>rarely</em>, <em>never</em>, <em>every day</em></li>
     <li>С глаголами <em>love</em>, <em>like</em>, <em>hate</em>, <em>want</em>, <em>need</em>, <em>believe</em> etc.</li>
 </ul>
 
