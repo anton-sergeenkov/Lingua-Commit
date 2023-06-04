@@ -9,6 +9,9 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -51,7 +54,48 @@ defineProps({
 		</TextComment>
 	</div>
 
-    <div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<!------------------------------------------------------------->
+<h4>3 вида глаголов</h4>
+<!------------------------------------------------------------->
+<ul>
+	<li>Действие произошло в конкретное время</li>
+	<li><mark>Was</mark> / <mark>Were</mark> - формы глагола ToBe в Past Simple </li>
+</ul>
+
+<Info>
+<ul>
+    <li>3 вида глаголов только для Present Simple и Past Simple</li>
+    <li>Глагол To Be - это "быть"</li>
+</ul>
+</Info>
+
+<h5>1. ToBe: Was (ед. ч.) / Were (мн.ч.)</h5>
+<ul>
+	<li>I / He / She / It - <mark>was</mark></li>
+	<li>You / We / They - <mark>were</mark></li>
+</ul>
+
+<ul>
+    <li><Op>+</Op> I <u>was</u> a developer a month ago</li>
+    <li><Op>-</Op> I <u>wasn’t</u> a developer a month ago</li>
+    <li><Op>?</Op> <u>Was</u> I a developer a month ago?</li>
+</ul>
+
+<h5>2. Modals Verb (Can, Must, May)</h5>
+<ul>
+    <li><Op>+</Op> I <u>could</u> swim</li>
+    <li><Op>-</Op> I <u>couldn’t</u> swim</li>
+    <li><Op>?</Op> <u>Could</u> I swim?</li>
+</ul>
+
+<h5>3. Verb: Do / Does</h5>
+<ul>
+    <li><Op>+</Op> I drank wine</li>
+    <li><Op>-</Op> I <u>didn’t</u> drink wine</li>
+    <li><Op>?</Op> <u>Did</u> I drink wine?</li>
+</ul>
+
+</div>
 </template>

@@ -70,7 +70,7 @@ const currentTense = ref('');
 		/>
 
 		<!-- Present -->
-		<TableWrapper style="grid-area: present-s" className="color-present" @click="getDescription('PresentSimple')">
+		<TableWrapper style="grid-area: present-s" className="color-present done" @click="getDescription('PresentSimple')">
 			<PresentSimple  />
 		</TableWrapper>
 		<TableWrapper style="grid-area: present-c" className="color-present" @click="getDescription('PresentContinuous')">
@@ -84,7 +84,7 @@ const currentTense = ref('');
 		</TableWrapper>
 
 		<!-- Past -->
-		<TableWrapper style="grid-area: past-s" className="color-past" @click="getDescription('PastSimple')">
+		<TableWrapper style="grid-area: past-s" className="color-past done" @click="getDescription('PastSimple')">
 			<PastSimple />
 		</TableWrapper>
 		<TableWrapper style="grid-area: past-c" className="color-past" @click="getDescription('PastContinuous')">
@@ -113,7 +113,7 @@ const currentTense = ref('');
 	</div>
 	<div v-else class="details-wrapper">
 		<div class="details-buttons">
-			<button class="details-close" @click="isTableView = !isTableView; isUilitView = !isUilitView">🏷️</button>
+			<button class="details-close" @click="isTableView = !isTableView; isUilitView = false">🏷️</button>
 			<button class="details-close" @click="isUilitView = !isUilitView">🥥</button>
 		</div>
 
@@ -216,6 +216,7 @@ Tenses Block
 	transition: .4s;
 	cursor: pointer;
 	outline: 2px solid transparent;
+	position: relative;
 }
 
 .color-present { background-color: #e1edd3; }
@@ -227,6 +228,18 @@ Tenses Block
 .color-future:hover {
 	filter: brightness(90%);
 	outline: 1px solid rgba(0,0,0,.3);
+}
+
+.done::after {
+	content: '';
+	display: block;
+	border: 2px solid rgba(var(--color-violet-blue), .45);
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /***************************************************
