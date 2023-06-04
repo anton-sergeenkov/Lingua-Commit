@@ -113,7 +113,7 @@ const currentTense = ref('');
 	</div>
 	<div v-else class="details-wrapper">
 		<div class="details-buttons">
-			<button class="details-close" @click="isTableView = !isTableView">🏷️</button>
+			<button class="details-close" @click="isTableView = !isTableView; isUilitView = !isUilitView">🏷️</button>
 			<button class="details-close" @click="isUilitView = !isUilitView">🥥</button>
 		</div>
 
