@@ -79,26 +79,32 @@ defineProps({
 <Info>
 <ul>
     <li>3 вида глаголов только для Present Simple и Past Simple</li>
+</ul>
+</Info>
+
+<Info>
+<ul>
     <li>Глагол To Be - это "быть"</li>
+    <li>Используется если нет действия / глагола</li>
     <li>"Am / Is / Are" - формы глагола To Be в Present Simple</li>
 </ul>
 </Info>
 
-<h5>1. To Be: Am / Is / Are</h5>
+<h5>1. To Be: <em>Am</em> / <em>Is</em> / <em>Are</em></h5>
 <ul>
     <li><Op>+</Op> <i>I <u>am</u> a developer</i></li>
     <li><Op>-</Op> <i>I <u>am</u> not a developer</i></li>
     <li><Op>?</Op> <i><u>Am</u> I a developer?</i></li>
 </ul>
 
-<h5>2. Modals Verb (Can, Must, May)</h5>
+<h5>2. Modals Verb: <em>Can</em>, <em>Must</em>, <em>May</em></h5>
 <ul>
     <li><Op>+</Op> <i>I <u>can</u> swim</i></li>
     <li><Op>-</Op> <i>I <u>can’t</u> swim</i></li>
     <li><Op>?</Op> <i><u>Can</u> I swim?</i></li>
 </ul>
 
-<h5>3. Verb: Do / Does</h5>
+<h5>3. Verb: <em>Do</em> / <em>Does</em></h5>
 <ul>
     <li><Op>+</Op> <i>I drink wine</i></li>
     <li><Op>-</Op> <i>I <u>don’t</u> drink wine</i></li>

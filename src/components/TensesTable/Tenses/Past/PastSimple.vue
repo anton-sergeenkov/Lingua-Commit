@@ -69,11 +69,18 @@ defineProps({
 <Info>
 <ul>
     <li>3 вида глаголов только для Present Simple и Past Simple</li>
-    <li>Глагол To Be - это "быть"</li>
+    <li><em>YOU</em> - мн.ч.</li>
 </ul>
 </Info>
 
-<h5>1. ToBe: Was (ед. ч.) / Were (мн.ч.)</h5>
+<Info>
+<ul>
+    <li>Глагол To Be - это "быть"</li>
+    <li>Используется если нет действия / глагола</li>
+</ul>
+</Info>
+
+<h5>1. ToBe: <em>Was</em> (ед. ч.) / <em>Were</em> (мн.ч.)</h5>
 <ul>
 	<li>I / He / She / It - <mark>was</mark></li>
 	<li>You / We / They - <mark>were</mark></li>
@@ -83,16 +90,17 @@ defineProps({
     <li><Op>+</Op> <i>I <u>was</u> a developer a month ago</i></li>
     <li><Op>-</Op> <i>I <u>wasn’t</u> a developer a month ago</i></li>
     <li><Op>?</Op> <i><u>Was</u> I a developer a month ago?</i></li>
+    <li><Op>?</Op> <i>Why <u>were</u> you angry yesterday?</i> (you - мн.ч.)</li>
 </ul>
 
-<h5>2. Modals Verb (Can, Must, May)</h5>
+<h5>2. Modals Verb: <em>Can</em>, <em>Must</em>, <em>May</em></h5>
 <ul>
     <li><Op>+</Op> <i>I <u>could</u> swim</i></li>
     <li><Op>-</Op> <i>I <u>couldn’t</u> swim</i></li>
     <li><Op>?</Op> <i><u>Could</u> I swim?</i></li>
 </ul>
 
-<h5>3. Verb: Do / Does</h5>
+<h5>3. Verb: <em>Did</em></h5>
 <ul>
     <li><Op>+</Op> <i>I drank wine</i></li>
     <li><Op>-</Op> <i>I <u>didn’t</u> drink wine</i></li>
