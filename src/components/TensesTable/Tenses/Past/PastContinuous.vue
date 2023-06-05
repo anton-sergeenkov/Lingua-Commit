@@ -9,6 +9,11 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
+import Continuous from '../Continuous.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -55,7 +60,29 @@ defineProps({
 		</TextComment>
 	</div>
 
-    <div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<hr />
+
+<!------------------------------------------------------------->
+<h4>Виды вопросов</h4>
+<!------------------------------------------------------------->
+<ul>
+    <li><Op>+</Op> <i>I <u>was</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
+    <li><Op>-</Op> <i>I <u>wasn’t</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
+    <li><Op>?</Op> <i><u>Was</u> I eat<u>ing</u> from 5 to 6 yesterday?</i></li>
+</ul>
+
+<!------------------------------------------------------------->
+<h4>Вариантивность</h4>
+<!------------------------------------------------------------->
+<ul>
+	<li><i>I <u>was</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
+	<li><i>Yesterday I <u>was</u> eat<u>ing</u> from 5 to 6</i></li>
+	<li><i>I <u>was</u> eat<u>ing</u> yesterday from 5 to 6</i></li>
+</ul>
+
+<Continuous />
+
+</div>
 </template>

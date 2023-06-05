@@ -112,7 +112,8 @@ b {
 	color: rgba(var(--color-violet), .9);
 }
 i {
-    color: rgb(var(--color-green));
+    color: rgb(var(--color-green-dark));
+	font-style: normal;
 }
 s {
 	text-decoration: none;
@@ -120,9 +121,17 @@ s {
 	font-weight: normal;
 }
 u {
-	color: blue;
+	color: rgb(var(--color-black));
 	border: 1px solid rgb(var(--color-sea-green-dark));
 	background-color: rgba(var(--color-sea-green-dark), .1);
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 0 3px;
+}
+table u {
+	color: blue;
+	border: 1px solid rgb(var(--color-sea-green-dark));
+	background-color: transparent;
 	text-decoration: none;
 	border-radius: 5px;
 	padding: 0 3px;

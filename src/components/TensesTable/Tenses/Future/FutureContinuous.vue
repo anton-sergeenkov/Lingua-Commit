@@ -9,6 +9,11 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
+import Continuous from '../Continuous.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -52,7 +57,20 @@ defineProps({
 		</TextComment>
 	</div>
 
-    <div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<hr />
+
+<!------------------------------------------------------------->
+<h4>Виды вопросов</h4>
+<!------------------------------------------------------------->
+<ul>
+    <li><Op>+</Op> <i>I <u>will</u> be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
+    <li><Op>-</Op> <i>I <u>won't</u> (will not) be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
+    <li><Op>?</Op> <i><u>Will</u> I be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
+</ul>
+
+<Continuous />
+
+</div>
 </template>

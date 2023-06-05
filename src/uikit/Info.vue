@@ -13,7 +13,7 @@
     display: inline-block;
 	padding: 0;
     padding-right: 20px;
-	font-size: 15px;
+	font-size: 14px;
 	margin: 10px;
 	line-height: 1.7;
 	border-radius: 4px;

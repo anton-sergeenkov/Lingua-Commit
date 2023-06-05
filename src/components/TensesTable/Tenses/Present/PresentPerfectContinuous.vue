@@ -9,6 +9,9 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -56,7 +59,9 @@ defineProps({
 		</TextComment>
 	</div>
 
-	<div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<hr />
+
+</div>
 </template>

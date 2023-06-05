@@ -85,30 +85,29 @@ defineProps({
 </Info>
 
 <h5>1. To Be: Am / Is / Are</h5>
-<p><b></b></p>
 <ul>
-    <li><Op>+</Op> I <u>am</u> a developer</li>
-    <li><Op>-</Op> I <u>am</u> not a developer</li>
-    <li><Op>?</Op> <u>Am</u> I a developer?</li>
+    <li><Op>+</Op> <i>I <u>am</u> a developer</i></li>
+    <li><Op>-</Op> <i>I <u>am</u> not a developer</i></li>
+    <li><Op>?</Op> <i><u>Am</u> I a developer?</i></li>
 </ul>
 
 <h5>2. Modals Verb (Can, Must, May)</h5>
 <ul>
-    <li><Op>+</Op> I <u>can</u> swim</li>
-    <li><Op>-</Op> I <u>can’t</u> swim</li>
-    <li><Op>?</Op> <u>Can</u> I swim?</li>
+    <li><Op>+</Op> <i>I <u>can</u> swim</i></li>
+    <li><Op>-</Op> <i>I <u>can’t</u> swim</i></li>
+    <li><Op>?</Op> <i><u>Can</u> I swim?</i></li>
 </ul>
 
 <h5>3. Verb: Do / Does</h5>
 <ul>
-    <li><Op>+</Op> I drink wine</li>
-    <li><Op>-</Op> I <u>don’t</u> drink wine</li>
-    <li><Op>?</Op> <u>Do</u> I drink wine?</li>
+    <li><Op>+</Op> <i>I drink wine</i></li>
+    <li><Op>-</Op> <i>I <u>don’t</u> drink wine</i></li>
+    <li><Op>?</Op> <i><u>Do</u> I drink wine?</i></li>
 </ul>
 <ul>
-    <li><Op>+</Op> She drink<u>s</u> wine</li>
-    <li><Op>-</Op> She <u>doesn’t</u> drink wine</li>
-    <li><Op>?</Op> Does she drink wine?</li>
+    <li><Op>+</Op> <i>She drink<u>s</u> wine</i></li>
+    <li><Op>-</Op> <i>She <u>doesn’t</u> drink wine</i></li>
+    <li><Op>?</Op> <i>Does she drink wine?</i></li>
 </ul>
 
 </div>

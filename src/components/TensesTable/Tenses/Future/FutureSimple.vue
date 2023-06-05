@@ -9,6 +9,9 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -55,7 +58,32 @@ defineProps({
 		</TextComment>
 	</div>
 
-    <div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<hr />
+
+<ul>
+	<li><mark>Will be</mark> - формы глагола ToBe во Future Simple</li>
+	<li>Не используются модальные глаголы: <em>Can</em>, <em>Must</em>, <em>May</em></li>
+</ul>
+
+<!------------------------------------------------------------->
+<h4>Виды вопросов</h4>
+<!------------------------------------------------------------->
+<h5>ToBe: Will be</h5>
+<ul>
+    <li><Op>+</Op> <i>I <u>will</u> drink wine</i></li>
+    <li><Op>-</Op> <i>I <u>won't</u> (will not) drink wine</i></li>
+    <li><Op>?</Op> <i><u>Will</u> I drink wine?</i></li>
+</ul>
+
+<!------------------------------------------------------------->
+<h4>Shall</h4>
+<!------------------------------------------------------------->
+<ul>
+	<li><mark>Shall</mark> используется, если что-то вежливо предлагается</li>
+	<li><i>Shall I help you?</i></li>
+</ul>
+
+</div>
 </template>

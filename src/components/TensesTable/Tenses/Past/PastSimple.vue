@@ -56,14 +56,16 @@ defineProps({
 
 <div v-if="details" class="data-details">
 
+<hr />
+
+<ul>
+	<li>Действие произошло в конкретное время</li>
+	<li><mark>Was</mark> / <mark>Were</mark> - формы глагола ToBe в Past Simple</li>
+</ul>
+
 <!------------------------------------------------------------->
 <h4>3 вида глаголов</h4>
 <!------------------------------------------------------------->
-<ul>
-	<li>Действие произошло в конкретное время</li>
-	<li><mark>Was</mark> / <mark>Were</mark> - формы глагола ToBe в Past Simple </li>
-</ul>
-
 <Info>
 <ul>
     <li>3 вида глаголов только для Present Simple и Past Simple</li>
@@ -78,23 +80,23 @@ defineProps({
 </ul>
 
 <ul>
-    <li><Op>+</Op> I <u>was</u> a developer a month ago</li>
-    <li><Op>-</Op> I <u>wasn’t</u> a developer a month ago</li>
-    <li><Op>?</Op> <u>Was</u> I a developer a month ago?</li>
+    <li><Op>+</Op> <i>I <u>was</u> a developer a month ago</i></li>
+    <li><Op>-</Op> <i>I <u>wasn’t</u> a developer a month ago</i></li>
+    <li><Op>?</Op> <i><u>Was</u> I a developer a month ago?</i></li>
 </ul>
 
 <h5>2. Modals Verb (Can, Must, May)</h5>
 <ul>
-    <li><Op>+</Op> I <u>could</u> swim</li>
-    <li><Op>-</Op> I <u>couldn’t</u> swim</li>
-    <li><Op>?</Op> <u>Could</u> I swim?</li>
+    <li><Op>+</Op> <i>I <u>could</u> swim</i></li>
+    <li><Op>-</Op> <i>I <u>couldn’t</u> swim</i></li>
+    <li><Op>?</Op> <i><u>Could</u> I swim?</i></li>
 </ul>
 
 <h5>3. Verb: Do / Does</h5>
 <ul>
-    <li><Op>+</Op> I drank wine</li>
-    <li><Op>-</Op> I <u>didn’t</u> drink wine</li>
-    <li><Op>?</Op> <u>Did</u> I drink wine?</li>
+    <li><Op>+</Op> <i>I drank wine</i></li>
+    <li><Op>-</Op> <i>I <u>didn’t</u> drink wine</i></li>
+    <li><Op>?</Op> <i><u>Did</u> I drink wine?</i></li>
 </ul>
 
 </div>

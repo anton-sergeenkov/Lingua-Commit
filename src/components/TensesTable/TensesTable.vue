@@ -70,7 +70,7 @@ const currentTense = ref('');
 		/>
 
 		<!-- Present -->
-		<TableWrapper style="grid-area: present-s" className="color-present done" @click="getDescription('PresentSimple')">
+		<TableWrapper style="grid-area: present-s" className="color-present" @click="getDescription('PresentSimple')">
 			<PresentSimple  />
 		</TableWrapper>
 		<TableWrapper style="grid-area: present-c" className="color-present" @click="getDescription('PresentContinuous')">
@@ -79,21 +79,21 @@ const currentTense = ref('');
 		<TableWrapper style="grid-area: present-p" className="color-present" @click="getDescription('PresentPerfect')">
 			<PresentPerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: present-pc" className="color-present" @click="getDescription('PresentPerfectContinuous')">
+		<TableWrapper style="grid-area: present-pc" className="color-present up" @click="getDescription('PresentPerfectContinuous')">
 			<PresentPerfectContinuous />
 		</TableWrapper>
 
 		<!-- Past -->
-		<TableWrapper style="grid-area: past-s" className="color-past done" @click="getDescription('PastSimple')">
+		<TableWrapper style="grid-area: past-s" className="color-past" @click="getDescription('PastSimple')">
 			<PastSimple />
 		</TableWrapper>
 		<TableWrapper style="grid-area: past-c" className="color-past" @click="getDescription('PastContinuous')">
 			<PastContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: past-p" className="color-past" @click="getDescription('PastPerfect')">
+		<TableWrapper style="grid-area: past-p" className="color-past up" @click="getDescription('PastPerfect')">
 			<PastPerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: past-pc" className="color-past" @click="getDescription('PastPerfectContinuous')">
+		<TableWrapper style="grid-area: past-pc" className="color-past up" @click="getDescription('PastPerfectContinuous')">
 			<PastPerfectContinuous />
 		</TableWrapper>
 
@@ -104,10 +104,10 @@ const currentTense = ref('');
 		<TableWrapper style="grid-area: future-c" className="color-future" @click="getDescription('FutureContinuous')">
 			<FutureContinuous />
 		</TableWrapper>
-		<TableWrapper style="grid-area: future-p" className="color-future" @click="getDescription('FuturePerfect')">
+		<TableWrapper style="grid-area: future-p" className="color-future up" @click="getDescription('FuturePerfect')">
 			<FuturePerfect />
 		</TableWrapper>
-		<TableWrapper style="grid-area: future-pc" className="color-future" @click="getDescription('FuturePerfectContinuous')">
+		<TableWrapper style="grid-area: future-pc" className="color-future up" @click="getDescription('FuturePerfectContinuous')">
 			<FuturePerfectContinuous />
 		</TableWrapper>
 	</div>
@@ -230,7 +230,7 @@ Tenses Block
 	outline: 1px solid rgba(0,0,0,.3);
 }
 
-.done::after {
+.up::after {
 	content: '';
 	display: block;
 	border: 2px solid rgba(var(--color-violet-blue), .45);

@@ -9,6 +9,9 @@ import TableWrapper from '@/uikit/TableElements/TableWrapper.vue';
 import TextComment from '@/uikit/TableElements/TextComment.vue';
 import TextData from '@/uikit/TableElements/TextData.vue';
 
+import Op from '@/uikit/Options.vue';
+import Info from '@/uikit/Info.vue';
+
 defineProps({
 	details: { type: Boolean, required: false },
 });
@@ -59,7 +62,30 @@ defineProps({
 		</TextComment>
 	</div>
 
-    <div v-if="details" class="data-details">
-        Data...
-    </div>
+<div v-if="details" class="data-details">
+
+<hr />
+
+<ul>
+	<li>Действие просто произошло</li>
+	<li><em>This</em>, <em>That</em>, <em>These</em>, <em>Those</em></li>
+</ul>
+
+<!------------------------------------------------------------->
+<h4>Виды вопросов</h4>
+<!------------------------------------------------------------->
+<ul>
+    <li><Op>+</Op> <i>I <u>have</u> eaten fish</i></li>
+    <li><Op>-</Op> <i>I <u>haven’t</u> eaten fish</i></li>
+    <li><Op>?</Op> <i><u>Have</u> I eaten fish?</i></li>
+</ul>
+
+<!------------------------------------------------------------->
+<h4>Сокращения</h4>
+<!------------------------------------------------------------->
+<ul>
+	<li><em>I have</em> been = <em>I’ve</em> been</li>
+	<li><em>He has</em> been = <em>He’s</em> been</li>
+</ul>
+</div>
 </template>
