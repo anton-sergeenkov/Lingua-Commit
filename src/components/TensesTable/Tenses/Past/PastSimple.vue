@@ -87,24 +87,24 @@ defineProps({
 </ul>
 
 <ul>
-    <li><Op>+</Op> <i>I <u>was</u> a developer a month ago</i></li>
-    <li><Op>-</Op> <i>I <u>wasn’t</u> a developer a month ago</i></li>
-    <li><Op>?</Op> <i><u>Was</u> I a developer a month ago?</i></li>
-    <li><Op>?</Op> <i>Why <u>were</u> you angry yesterday?</i> (you - мн.ч.)</li>
+    <li><Op>+</Op> <i>I <s>was</s> a developer a month ago</i></li>
+    <li><Op>-</Op> <i>I <s>wasn’t</s> a developer a month ago</i></li>
+    <li><Op>?</Op> <i><s>Was</s> I a developer a month ago?</i></li>
+    <li><Op>?</Op> <i>Why <s>were</s> you angry yesterday?</i> (you - мн.ч.)</li>
 </ul>
 
 <h5>2. Modals Verb: <em>Can</em>, <em>Must</em>, <em>May</em></h5>
 <ul>
-    <li><Op>+</Op> <i>I <u>could</u> swim</i></li>
-    <li><Op>-</Op> <i>I <u>couldn’t</u> swim</i></li>
-    <li><Op>?</Op> <i><u>Could</u> I swim?</i></li>
+    <li><Op>+</Op> <i>I <s>could</s> swim</i></li>
+    <li><Op>-</Op> <i>I <s>couldn’t</s> swim</i></li>
+    <li><Op>?</Op> <i><s>Could</s> I swim?</i></li>
 </ul>
 
 <h5>3. Verb: <em>Did</em></h5>
 <ul>
     <li><Op>+</Op> <i>I drank wine</i></li>
-    <li><Op>-</Op> <i>I <u>didn’t</u> drink wine</i></li>
-    <li><Op>?</Op> <i><u>Did</u> I drink wine?</i></li>
+    <li><Op>-</Op> <i>I <s>didn’t</s> drink wine</i></li>
+    <li><Op>?</Op> <i><s>Did</s> I drink wine?</i></li>
 </ul>
 
 </div>

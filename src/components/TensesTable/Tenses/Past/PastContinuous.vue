@@ -68,18 +68,18 @@ defineProps({
 <h4>Виды вопросов</h4>
 <!------------------------------------------------------------->
 <ul>
-    <li><Op>+</Op> <i>I <u>was</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
-    <li><Op>-</Op> <i>I <u>wasn’t</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
-    <li><Op>?</Op> <i><u>Was</u> I eat<u>ing</u> from 5 to 6 yesterday?</i></li>
+    <li><Op>+</Op> <i>I <s>was</s> eat<s>ing</s> from 5 to 6 yesterday</i></li>
+    <li><Op>-</Op> <i>I <s>wasn’t</s> eat<s>ing</s> from 5 to 6 yesterday</i></li>
+    <li><Op>?</Op> <i><s>Was</s> I eat<s>ing</s> from 5 to 6 yesterday?</i></li>
 </ul>
 
 <!------------------------------------------------------------->
 <h4>Вариантивность</h4>
 <!------------------------------------------------------------->
 <ul>
-	<li><i>I <u>was</u> eat<u>ing</u> from 5 to 6 yesterday</i></li>
-	<li><i>Yesterday I <u>was</u> eat<u>ing</u> from 5 to 6</i></li>
-	<li><i>I <u>was</u> eat<u>ing</u> yesterday from 5 to 6</i></li>
+	<li><i>I <s>was</s> eat<s>ing</s> from 5 to 6 yesterday</i></li>
+	<li><i>Yesterday I <s>was</s> eat<s>ing</s> from 5 to 6</i></li>
+	<li><i>I <s>was</s> eat<s>ing</s> yesterday from 5 to 6</i></li>
 </ul>
 
 <Continuous />

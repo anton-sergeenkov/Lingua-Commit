@@ -72,9 +72,9 @@ defineProps({
 <!------------------------------------------------------------->
 <h5>ToBe: Will be</h5>
 <ul>
-    <li><Op>+</Op> <i>I <u>will</u> drink wine</i></li>
-    <li><Op>-</Op> <i>I <u>won't</u> (will not) drink wine</i></li>
-    <li><Op>?</Op> <i><u>Will</u> I drink wine?</i></li>
+    <li><Op>+</Op> <i>I <s>will</s> drink wine</i></li>
+    <li><Op>-</Op> <i>I <s>won't</s> (will not) drink wine</i></li>
+    <li><Op>?</Op> <i><s>Will</s> I drink wine?</i></li>
 </ul>
 
 <!------------------------------------------------------------->
@@ -82,7 +82,7 @@ defineProps({
 <!------------------------------------------------------------->
 <ul>
 	<li><mark>Shall</mark> используется, если что-то вежливо предлагается</li>
-	<li><i>Shall I help you?</i></li>
+	<li><i><s>Shall</s> I help you?</i></li>
 </ul>
 
 </div>

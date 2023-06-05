@@ -25,7 +25,7 @@ defineProps({
 			<Row>
 				<ColSentence>+</ColSentence>
 				<Col>___</Col>
-				<ColAccent>will have <u>been</u></ColAccent>
+				<ColAccent>will have <s>been</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -34,7 +34,7 @@ defineProps({
 			<Row>
 				<ColSentence>-</ColSentence>
 				<Col>___</Col>
-				<ColAccent>won't have <u>been</u></ColAccent>
+				<ColAccent>won't have <s>been</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -43,7 +43,7 @@ defineProps({
 			<Row>
 				<ColSentence>?</ColSentence>
 				<ColAccent>Will</ColAccent>
-				<ColAccent>___ have <u>been</u></ColAccent>
+				<ColAccent>___ have <s>been</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>

@@ -27,7 +27,7 @@ defineProps({
 			<Row>
 				<ColSentence>+</ColSentence>
 				<ColAccent>*</ColAccent>
-				<ColAccent>will <u>be</u></ColAccent>
+				<ColAccent>will <s>be</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -36,7 +36,7 @@ defineProps({
 			<Row>
 				<ColSentence>-</ColSentence>
 				<Col>___</Col>
-				<ColAccent>won't <u>be</u></ColAccent>
+				<ColAccent>won't <s>be</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -45,7 +45,7 @@ defineProps({
 			<Row>
 				<ColSentence>?</ColSentence>
 				<ColAccent>Will</ColAccent>
-				<ColAccent>___ <u>be</u></ColAccent>
+				<ColAccent>___ <s>be</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -65,9 +65,9 @@ defineProps({
 <h4>Виды вопросов</h4>
 <!------------------------------------------------------------->
 <ul>
-    <li><Op>+</Op> <i>I <u>will</u> be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
-    <li><Op>-</Op> <i>I <u>won't</u> (will not) be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
-    <li><Op>?</Op> <i><u>Will</u> I be eat<u>ing</u> from 5 to 6 tomorrow</i></li>
+    <li><Op>+</Op> <i>I <s>will</s> be eat<s>ing</s> from 5 to 6 tomorrow</i></li>
+    <li><Op>-</Op> <i>I <s>won't</s> (will not) be eat<s>ing</s> from 5 to 6 tomorrow</i></li>
+    <li><Op>?</Op> <i><s>Will</s> I be eat<s>ing</s> from 5 to 6 tomorrow</i></li>
 </ul>
 
 <Continuous />

@@ -25,12 +25,12 @@ defineProps({
 			<Row>
 				<ColSentence rowspan="2">+</ColSentence>
 				<Col>I / You / We / They</Col>
-				<ColAccent>have <u>been</u></ColAccent>
+				<ColAccent>have <s>been</s></ColAccent>
 				<ColVerb rowspan="3">V<sub>ing</sub></ColVerb>
 			</Row>
 			<Row>
 				<Col>He / She / It</Col>
-				<ColAccent>has <u>been</u></ColAccent>
+				<ColAccent>has <s>been</s></ColAccent>
 			</Row>
 		</Table>
 
@@ -38,7 +38,7 @@ defineProps({
 			<Row>
 				<ColSentence>-</ColSentence>
 				<Col>___</Col>
-				<ColAccent>haven't <u>been</u> / <br/> hasn't <u>been</u></ColAccent>
+				<ColAccent>haven't <s>been</s> / <br/> hasn't <s>been</s></ColAccent>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>
@@ -47,7 +47,7 @@ defineProps({
 			<Row>
 				<ColSentence>?</ColSentence>
 				<ColAccent>Have / Has</ColAccent>
-				<Col>___ <u>been</u></Col>
+				<Col>___ <s>been</s></Col>
 				<ColVerb>V<sub>ing</sub></ColVerb>
 			</Row>
 		</Table>

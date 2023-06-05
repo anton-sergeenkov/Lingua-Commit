@@ -72,9 +72,9 @@ defineProps({
 <h4>Виды вопросов</h4>
 <!------------------------------------------------------------->
 <ul>
-    <li><Op>+</Op> <i>He <u>is</u> eat<u>ing</u> now</i></li>
-    <li><Op>-</Op> <i>He <u>isn't</u> eat<u>ing</u> now</i></li>
-    <li><Op>?</Op> <i><u>Is</u> he eat<u>ing</u> now?</i></li>
+    <li><Op>+</Op> <i>He <s>is</s> eat<s>ing</s> now</i></li>
+    <li><Op>-</Op> <i>He <s>isn't</s> eat<s>ing</s> now</i></li>
+    <li><Op>?</Op> <i><s>Is</s> he eat<s>ing</s> now?</i></li>
 </ul>
 
 <Continuous />

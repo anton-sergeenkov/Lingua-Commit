@@ -116,11 +116,6 @@ i {
 	font-style: normal;
 }
 s {
-	text-decoration: none;
-	color: rgb(var(--color-gray-50));
-	font-weight: normal;
-}
-u {
 	color: rgb(var(--color-black));
 	border: 1px solid rgb(var(--color-sea-green-dark));
 	background-color: rgba(var(--color-sea-green-dark), .1);
@@ -128,7 +123,10 @@ u {
 	border-radius: 5px;
 	padding: 0 3px;
 }
-table u {
+u {
+	color: rgb(var(--color-blue-dark));
+}
+table s {
 	color: blue;
 	border: 1px solid rgb(var(--color-sea-green-dark));
 	background-color: transparent;

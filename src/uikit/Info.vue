@@ -1,10 +1,17 @@
 <template>
     <div>
-        <div class="wrapper">
+        <div class="wrapper global-info">
             <slot></slot>
         </div>
     </div>
 </template>
+
+<style>
+.global-info ul {
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+}
+</style>
 
 <style scoped>
 .wrapper {
@@ -12,7 +19,6 @@
 
     display: inline-block;
 	padding: 0;
-    padding-right: 20px;
 	font-size: 14px;
 	margin: 10px;
 	line-height: 1.7;

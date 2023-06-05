@@ -92,27 +92,27 @@ defineProps({
 
 <h5>1. To Be: <em>Am</em> / <em>Is</em> / <em>Are</em></h5>
 <ul>
-    <li><Op>+</Op> <i>I <u>am</u> a developer</i></li>
-    <li><Op>-</Op> <i>I <u>am</u> not a developer</i></li>
-    <li><Op>?</Op> <i><u>Am</u> I a developer?</i></li>
+    <li><Op>+</Op> <i>I <s>am</s> a developer</i></li>
+    <li><Op>-</Op> <i>I <s>am</s> not a developer</i></li>
+    <li><Op>?</Op> <i><s>Am</s> I a developer?</i></li>
 </ul>
 
 <h5>2. Modals Verb: <em>Can</em>, <em>Must</em>, <em>May</em></h5>
 <ul>
-    <li><Op>+</Op> <i>I <u>can</u> swim</i></li>
-    <li><Op>-</Op> <i>I <u>can’t</u> swim</i></li>
-    <li><Op>?</Op> <i><u>Can</u> I swim?</i></li>
+    <li><Op>+</Op> <i>I <s>can</s> swim</i></li>
+    <li><Op>-</Op> <i>I <s>can’t</s> swim</i></li>
+    <li><Op>?</Op> <i><s>Can</s> I swim?</i></li>
 </ul>
 
 <h5>3. Verb: <em>Do</em> / <em>Does</em></h5>
 <ul>
     <li><Op>+</Op> <i>I drink wine</i></li>
-    <li><Op>-</Op> <i>I <u>don’t</u> drink wine</i></li>
-    <li><Op>?</Op> <i><u>Do</u> I drink wine?</i></li>
+    <li><Op>-</Op> <i>I <s>don’t</s> drink wine</i></li>
+    <li><Op>?</Op> <i><s>Do</s> I drink wine?</i></li>
 </ul>
 <ul>
-    <li><Op>+</Op> <i>She drink<u>s</u> wine</i></li>
-    <li><Op>-</Op> <i>She <u>doesn’t</u> drink wine</i></li>
+    <li><Op>+</Op> <i>She drink<s>s</s> wine</i></li>
+    <li><Op>-</Op> <i>She <s>doesn’t</s> drink wine</i></li>
     <li><Op>?</Op> <i>Does she drink wine?</i></li>
 </ul>
 

@@ -11,11 +11,11 @@ import TwoSides from '@/uikit/TwoSides.vue';
 <h3>Tags</h3>
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <ul>
-    <li><em>&lt;em&gt;</em></li>
     <li><b>&lt;b&gt;</b></li>
-    <li><i>&lt;i&gt;</i></li>
-    <li><s>&lt;s&gt;</s></li>
     <li><u>&lt;u&gt;</u></li>
+    <li><i>&lt;i&gt;</i></li>
+    <li><em>&lt;em&gt;</em></li>
+    <li><s>&lt;s&gt;</s></li>
     <li><mark>&lt;mark&gt;</mark></li>
 </ul>
 

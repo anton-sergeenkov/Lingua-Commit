@@ -14,7 +14,7 @@ import Info from '@/uikit/Info.vue';
 <h5>1. Если из одного слога и заканчивается на согласный, то удваивается</h5>
 <ul>
     <li>Н-р слово <em>cut</em></li>
-    <li><i>He is cut<u>ting</u></i></li>
+    <li><i>He is cut<s>ting</s></i></li>
 </ul>
 
 <h5>2. Глагол To Be</h5>

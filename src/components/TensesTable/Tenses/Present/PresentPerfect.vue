@@ -75,9 +75,9 @@ defineProps({
 <h4>Виды вопросов</h4>
 <!------------------------------------------------------------->
 <ul>
-    <li><Op>+</Op> <i>I <u>have</u> eaten fish</i></li>
-    <li><Op>-</Op> <i>I <u>haven’t</u> eaten fish</i></li>
-    <li><Op>?</Op> <i><u>Have</u> I eaten fish?</i></li>
+    <li><Op>+</Op> <i>I <s>have</s> eaten fish</i></li>
+    <li><Op>-</Op> <i>I <s>haven’t</s> eaten fish</i></li>
+    <li><Op>?</Op> <i><s>Have</s> I eaten fish?</i></li>
 </ul>
 
 <!------------------------------------------------------------->
